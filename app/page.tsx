@@ -166,7 +166,7 @@ export default function HomePage() {
             <br />
             <em>unblocking me</em>
           </h1>
-          <p className="subcopy">Appreciate it.</p>
+          <p className="subcopy">Appreciate it. 🥹</p>
         </div>
       </main>
     );
@@ -185,6 +185,7 @@ export default function HomePage() {
           <br />
           <em>from everywhere</em>
         </h1>
+        <p className="subcopy">Just one tap. That would mean a lot. 🥹</p>
         <div className="actions">
           <button
             type="button"
