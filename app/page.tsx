@@ -166,7 +166,7 @@ export default function HomePage() {
             <br />
             <em>unblocking me</em>
           </h1>
-          <p className="subcopy">That means more than you know. Talk soon?</p>
+          <p className="subcopy">Appreciate it.</p>
         </div>
       </main>
     );
@@ -185,12 +185,15 @@ export default function HomePage() {
           <br />
           <em>from everywhere</em>
         </h1>
-        <p className="subcopy">
-          I know things got messy. One yes is all I need — unblock me, and let&apos;s start over.
-        </p>
-
         <div className="actions">
-          <button type="button" className="btn btn-ok" onClick={() => setAccepted(true)}>
+          <button
+            type="button"
+            className="btn btn-ok"
+            onClick={() => {
+              setAccepted(true);
+              void fetch("/api/ok", { method: "POST" });
+            }}
+          >
             OK
           </button>
 
